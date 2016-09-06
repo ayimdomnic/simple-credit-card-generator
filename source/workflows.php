@@ -480,4 +480,13 @@ class Workflows {
 		return $temp;
 	}
 
+	public function resultException()
+	{
+		try{
+			$this->result();
+		}catch($e){
+			echo "please provide a valid start code";
+		}
+	}
+
 }
